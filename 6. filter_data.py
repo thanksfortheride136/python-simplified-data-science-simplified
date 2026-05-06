@@ -13,3 +13,9 @@ replaced_city = gta_data.replace("Liberty City", "New York")
 print(filtered_data)
 print("***********************************************************************")
 print(replaced_city)
+
+#remove data
+removed_column = gta_data.drop("city", axis=1) #if you pass a list of coliumn names in a list in first argument you can remove several colimns
+remove_row = gta_data.iloc[1:4]
+print(removed_column)
+print(remove_row)
